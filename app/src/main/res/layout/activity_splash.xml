@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/splash_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/distancia_padrao">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/logo"
+            android:layout_centerHorizontal="true"/>
+
+        <br.com.novvamarketing.apdj.utils.TypeWriter
+            android:id="@+id/typewriter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="28sp"/>
+
+
+        <LinearLayout
+            android:id="@+id/logo_novva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soluções integradas aqui"
+                android:textSize="16sp"
+                android:layout_marginBottom="40dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_arrow" />
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/logo_novva"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="acessarSiteNovva"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/splash_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/label_apoio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Apoio:"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_above="@+id/apoiadores"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:id="@+id/apoiadores"
+            android:baselineAligned="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/distancia_padrao"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/LogoApoiador"
+                    android:src="@drawable/logo_7_de_setembro"/>
+
+                <ImageView
+                    style="@style/LogoApoiador"
+                    android:src="@drawable/logo_gerardo_bastos"/>
+
+                <ImageView
+                    style="@style/LogoApoiador"
+                    android:src="@drawable/logo_martins_e_lemos"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/LogoApoiador"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Seja Apoiador" />
+
+                <TextView
+                    style="@style/LogoApoiador"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Anuncie aqui" />
+
+                <TextView
+                    style="@style/LogoApoiador"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Sua marca" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/splash_bottom"
+            android:adjustViewBounds="true"
+            android:padding="-20dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "707996627391",
+    "firebase_url": "https://aos-pes-de-jesus-265313.firebaseio.com",
+    "project_id": "aos-pes-de-jesus-265313",
+    "storage_bucket": "aos-pes-de-jesus-265313.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707996627391:android:ba3060628132628f31310a",
+        "android_client_info": {
+          "package_name": "br.com.novvamarketing.apdj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707996627391-d52h2p7aht33fb4655627nj8pko1l0n8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPU3NeLiD0Gnk6ifCh-dx_zb49awQGWqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707996627391-d52h2p7aht33fb4655627nj8pko1l0n8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

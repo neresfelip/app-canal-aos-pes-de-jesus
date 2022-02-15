@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:gravity="center_horizontal"
+    android:padding="@dimen/distancia_padrao">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/sobre_versao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/distancia_padrao" />
+
+    <TextView
+        android:id="@+id/sobre_texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/sobre_bt_avaliar"
+        style="@style/BtSobre"
+        android:layout_marginTop="@dimen/distancia_padrao"
+        android:onClick="clickSobre">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_thumb_up"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avalie-nos na Play Store"
+            android:layout_marginLeft="@dimen/distancia_padrao"
+            android:layout_marginStart="@dimen/distancia_padrao"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sobre_bt_recomendar"
+        style="@style/BtSobre"
+        android:onClick="recomendar"
+        android:layout_marginBottom="@dimen/distancia_padrao">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recomendar a um amigo"
+            android:layout_marginLeft="@dimen/distancia_padrao"
+            android:layout_marginStart="@dimen/distancia_padrao"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siga o pastor nas redes sociais:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ic_facebook"
+            style="@style/BtRedesSociais"
+            android:src="@drawable/ic_facebook"
+            android:onClick="clickSobre"/>
+
+        <ImageView
+            android:id="@+id/ic_instagram"
+            style="@style/BtRedesSociais"
+            android:src="@drawable/ic_instagram"
+            android:onClick="clickSobre"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conheça a Novva Marketing ->" />
+
+        <ImageView
+            android:id="@+id/sobre_bt_novva"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:padding="3dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo_novva"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="clickSobre"
+            android:background="@drawable/bg_click"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

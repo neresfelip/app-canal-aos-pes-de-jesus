@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aos Pés de Jesus</string>
+    <string name="erro_de_rede">Erro de rede</string>
+    <string name="entendi">Entendi</string>
+    <string name="sobre">Sobre</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="splash_frase">Quer visibilidade e autoridade no seu negócio?</string>
+</resources>

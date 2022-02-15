@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TransparentText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#00000000</item>
+    </style>
+
+    <style name="TextApoiador">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="LogoApoiador">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@drawable/bg_logo_apoiador</item>
+    </style>
+
+    <style name="BtSobre">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/bg_click</item>
+    </style>
+
+    <style name="BtRedesSociais">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/bg_click</item>
+    </style>
+
+    <style name="titulo_playlist">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/distancia_padrao</item>
+        <item name="android:layout_marginLeft">@dimen/distancia_padrao</item>
+        <item name="android:layout_marginStart">@dimen/distancia_padrao</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/bg_click</item>
+        <item name="android:onClick">abrirPlaylist</item>
+    </style>
+
+</resources>
